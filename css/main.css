@@ -1,0 +1,164 @@
+/*公共样式*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Microsoft Yahei", Tahoma, Arial, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*复位样式*/
+.container {
+  width: 1055px;
+  margin: auto;
+}
+/*index样式*/
+.nav {
+  width: 100%;
+  background: url(../images/nav_back.jpg);
+  line-height: 50px;
+  overflow: hidden;
+}
+.nav .container .log {
+  float: left;
+  margin-top: 5px;
+}
+.nav .container .list {
+  display: inline-block;
+  margin-left: 40px;
+}
+.nav .container .list li {
+  display: inline-block;
+  position: relative;
+}
+.nav .container .list li a {
+  padding: 0px 50px;
+  display: block;
+  color: #aaaaaa;
+  height: 50px;
+}
+.nav .container .list li.active:after,
+.nav .container .list li.active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+  height: 50px;
+  background: #242424;
+  box-shadow: -1px 0px 0px #474747;
+}
+.nav .container .list li.active:before {
+  right: 0px;
+}
+.nav .container .list li.active a {
+  background: url(../images/nav_back_active.jpg);
+}
+/*page01*/
+.page01 {
+  background: url(../images/ipad-intro-bg.jpg);
+  overflow: hidden;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+.page01 .container {
+  padding-top: 84px;
+  display: flex;
+  /*子级内部水平比例分配*/
+}
+.page01 .container .left {
+  align-items: center;
+  /*水平居中*/
+  flex-direction: column;
+  /*顶部对齐*/
+  /*margin-right: 20px;*/
+  display: flex;
+  flex: 1;
+  /*分1部分*/
+}
+.page01 .container .left .one {
+  width: 130px;
+  height: 130px;
+  background: url(../images/app-icon.png) no-repeat;
+  /*no-repeat是除去图像多余的*/
+}
+.page01 .container .left div + div {
+  margin-top: 30px;
+}
+.page01 .container .left .two {
+  width: 499px;
+  height: 122px;
+  background: url(../images/text_intro.png) no-repeat;
+}
+.page01 .container .left .th .download {
+  display: block;
+  width: 163px;
+  height: 53px;
+  background: url(../images/ipad-down-btn.png) no-repeat;
+}
+.page01 .container .left .th p {
+  color: #999999;
+  font-size: 12px;
+}
+.page01 .container .right {
+  display: block;
+  flex: 1;
+  background: url(../images/ipad-ui.png) no-repeat;
+  width: 518px;
+  height: 430px;
+}
+/*page02*/
+.page02 {
+  overflow: hidden;
+  /*-webkit-background-size: cover;*/
+  /*background-size: cover;*/
+  background: url(../images/mv-bg.jpg) -213px 0px;
+  padding: 30px 0px;
+  background-size: 1670px;
+}
+.page02 .container .content {
+  margin-left: 400px;
+  width: 750px;
+}
+.page02 .container .content .top {
+  width: 456px;
+  height: 100px;
+  /*display: block;*/
+  background: url(../images/mv-text.png);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.page02 .container .content .bottom {
+  width: 500px;
+  height: 386px;
+  background: url(../images/mv-pic1.png);
+}
+.page02 .container .content .bottom img {
+  margin: 90px 0px 0px 60px;
+}
+/*page03*/
+.page03 {
+  background: url(../images/hq-bg_1.png);
+  padding: 30px 0px;
+  overflow: hidden;
+}
+.page03 .text {
+  width: 563px;
+  height: 88px;
+  background: url(../images/ipad-hq-text.png);
+  display: inline-block;
+}
